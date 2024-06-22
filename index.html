@@ -31,28 +31,37 @@
       .ShCont{
         height: 110px;
         width: 100px;
-        border-radius: 10px;
+        border-radius: 5px;
       }
       .ShCont:hover{
         background-color: rgb(223, 223, 223);
+      }
+      .navi1:hover{
+        text-decoration: underline;
+      }
+      .navi2:hover{
+        background-color: rgb(223, 223, 223);
+      }
+      .navi3:hover{
+        box-shadow: 0px 0px 2px 5px rgb(223, 223, 223);
       }
     </style>
     <title>Google</title>
   </head>
   <body>
-    <nav class="d-flex justify-content-end align-items-baseline p-2" style="height: 20px;">
-      <div><a href="" class="nav-link">Gmail</a></div>
-      <div><a href="" class="nav-link">Images</a></div>
-      <div><a href="" class="nav-link "><img class="image-fliud" src="1792980-200.png" alt="" width="20px"></a></div>
-      <div><a href="" class="nav-link "><img class="image-fliud" src="2034666-200.png" alt="" width="20px"></a></div>
-      <div class="bg-danger rounded-circle"><a href="" class="nav-link">M</a></div>
+    <nav class="p-2 d-flex justify-content-end align-items-baseline" style="height: 20px;">
+      <div><a href="" class="nav-link text-dark navi1">Gmail</a></div>
+      <div><a href="" class="nav-link text-dark navi1">Images</a></div>
+      <div class="mx-1 navi2 rounded-circle"><a href="" class="nav-link"><img class="image-fliud" src="1792980-200.png" alt="" width="20px"></a></div>
+      <div class="mx-1 navi2 rounded-circle"><a href="" class="nav-link"><img class="image-fliud" src="2034666-200.png" alt="" width="20px"></a></div>
+      <div class="mx-1 navi3 bg-danger rounded-circle"><a href="" class="nav-link text-dark">M</a></div>
     </nav>
     <section class="" style="margin-top: 150px;">
       <div class="mt-5 d-flex flex-column align-items-center">
-        <div><img src="googlelogo_color_160x56dp.png" alt=""></div>
-        <div class="p-2 rounded-pill w-50 d-flex align-items-center" style="box-shadow: 0px 0px 2px 2px rgb(197, 197, 197); height: 40px;">
+        <div class="m-3"><img src="googlelogo_color_160x56dp.png" alt=""></div>
+        <div class="p-2 px-3 rounded-pill d-flex align-items-center" style="box-shadow: 0px 2px 5px 1px rgb(197, 197, 197); height: 40px; width: 600px;">
           <i class="bi bi-search text-dark"></i>
-          <input class="p-2 w-50" type="text" placeholder="Search Google or type a URL" style="border:none">
+          <input class="p-2 w-50" type="text" placeholder="Search Google or type a URL" style="border:none; outline: none;">
           <div class="p-2 ms-auto">
             <i class="m-1 bi bi-mic text-dark"></i>
           <i class="m-1 bi bi-camera text-dark"></i>
